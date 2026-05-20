@@ -1,16 +1,12 @@
-let arr:number[] = [1,2,3,3,2,1,3,2,1,0,2]
-let freqmap = new Map<number,number>()
-
-for(let num of arr)
+const arr:number[]=[1,2,3,1,2,3]
+const map1:Map<number,number>= new Map()
+for(let i=0;i<arr.length;i++)
 {
-    if(freqmap.has(num))
+    if(map1.has(arr[i]))
     {
-    freqmap.set(num, (freqmap.get(num)||0)+1)
+        map1.set(arr[i], (map1.get(arr[i])||0)+1)
     }
     else
-    {
-        freqmap.set(num,1)
-    }
-
+        map1.set(arr[i],1)
 }
-console.log(freqmap);
+console.log(map1);
