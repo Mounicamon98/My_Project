@@ -14,6 +14,7 @@ export class LoginPage
     }
     async loginEmail(email:string)
     {
+     
         await this.page.fill(this.email,email),
         await this.page.click(this.continueBtn)
 
