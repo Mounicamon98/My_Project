@@ -1,11 +1,12 @@
 "use strict";
-let x = [22, 32, 42, 59, 3, 2, 1, 1];
-let c = {};
-for (let i = 0; i < x.length; i++) {
-    if (c[x[i]]) {
-        c[x[i]]++;
+const arr1 = [55, 12, 32, 12];
+const obj = {};
+for (let i = 0; i < arr1.length; i++) {
+    if (obj[arr1[i]]) {
+        obj[arr1[i]]++;
     }
-    else
-        c[x[i]] = 1;
+    else {
+        obj[arr1[i]] = 1;
+    }
 }
-console.log(c);
+console.log(obj);
