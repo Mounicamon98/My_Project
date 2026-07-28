@@ -14,7 +14,7 @@ export class Appointment{
         homeVisit:number
     ){
         await expect(this.page.getByText(`₹${online}`).first()).toBeVisible()
-        await expect(this.page.getByText(`₹${online}`).first()).toBeVisible()
-        await expect(this.page.getByText(`₹${online}`).first()).toBeVisible()
+        await expect(this.page.getByText(`₹${inClinic}`).first()).toBeVisible()
+        await expect(this.page.getByText(`₹${homeVisit}`).first()).toBeVisible()
     }
 }
